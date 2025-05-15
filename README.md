@@ -12,24 +12,16 @@ This project is a technical test implementation for a Frontend Developer positio
   - [x] Display a list of user records
   - [x] Add button for new entries
   - [x] Responsive grid layout
-  - [x] User status indicators
 
 - [x] **User Management**
   - [x] Add new user functionality
   - [x] Edit existing user details
   - [x] Modal/Drawer implementation using shadcn/ui
-  - [x] Form validation and error handling
-  - [x] Success notifications
-  - [x] Status toggle (Active/Inactive)
 
 - [x] **UI/UX Requirements**
   - [x] Shadcn/ui components integration
   - [x] Responsive design (mobile/desktop)
-  - [x] Loading states
-  - [x] Error handling
   - [x] Toast notifications
-
-![User Management Interface](screenshot.png)
 
 ## Features
 
@@ -37,7 +29,6 @@ This project is a technical test implementation for a Frontend Developer positio
 - 👤 **User Management**:
   - Add new users with detailed information
   - Edit existing user details
-  - Toggle user status (Active/Inactive)
   - View user activity statistics
 - 🎨 **Modern UI Components**:
   - Beautiful drawer/bottom sheet for forms
