@@ -1,54 +1,127 @@
-# React + TypeScript + Vite
+# User Management Interface
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a technical test implementation for a Frontend Developer position at Pixel Boom Studios. It's a modern, responsive user management interface built with React, TypeScript, and Vite, featuring a beautiful UI powered by shadcn/ui components and styled with Tailwind CSS.
 
-Currently, two official plugins are available:
+🎨 [View Figma Design](https://www.figma.com/design/TOALrzlKsyYKDhWIIvysNI/Teste-Frontend-Developer?node-id=0-1&p=f&t=e2xHEgEuILnbmnkU-0)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Implementation Checklist
 
-## Expanding the ESLint configuration
+### Required Features ✅
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [x] **Listing Screen**
+  - [x] Display a list of user records
+  - [x] Add button for new entries
+  - [x] Responsive grid layout
+  - [x] User status indicators
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- [x] **User Management**
+  - [x] Add new user functionality
+  - [x] Edit existing user details
+  - [x] Modal/Drawer implementation using shadcn/ui
+  - [x] Form validation and error handling
+  - [x] Success notifications
+  - [x] Status toggle (Active/Inactive)
+
+- [x] **UI/UX Requirements**
+  - [x] Shadcn/ui components integration
+  - [x] Responsive design (mobile/desktop)
+  - [x] Loading states
+  - [x] Error handling
+  - [x] Toast notifications
+
+![User Management Interface](screenshot.png)
+
+## Features
+
+- 📱 **Responsive Design**: Fully responsive interface that works seamlessly on desktop and mobile devices
+- 👤 **User Management**:
+  - Add new users with detailed information
+  - Edit existing user details
+  - Toggle user status (Active/Inactive)
+  - View user activity statistics
+- 🎨 **Modern UI Components**:
+  - Beautiful drawer/bottom sheet for forms
+  - Interactive data tables
+  - Responsive cards and grids
+  - Toast notifications for actions
+- 📊 **Dashboard Overview**:
+  - Total users count
+  - Active/Inactive users statistics
+  - Session time tracking
+  - User activity monitoring
+
+## Tech Stack
+
+- ⚛️ **React** - Frontend library
+- 📘 **TypeScript** - Type safety and better developer experience
+- ⚡ **Vite** - Next generation frontend tooling
+- 🎨 **Tailwind CSS** - Utility-first CSS framework
+- 🔷 **shadcn/ui** - High-quality React components
+- 📦 **Other key libraries**:
+  - Lucide React - Beautiful icons
+  - React Hook Form - Form handling
+  - Sonner - Toast notifications
+  - Vaul - Drawer components
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn or pnpm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
+   cd your-repo-name
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser to see the application.
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── compositions/    # Complex components
+│   ├── elements/        # Basic reusable components
+│   ├── sections/        # Page sections
+│   └── ui/             # shadcn/ui components
+├── hooks/              # Custom React hooks
+├── lib/               # Utility functions
+└── pages/             # Page components
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Contributing
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [shadcn/ui](https://ui.shadcn.com/) for the beautiful component library
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
+- [Vite](https://vitejs.dev/) for the blazing fast development experience
