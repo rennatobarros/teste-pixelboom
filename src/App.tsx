@@ -1,11 +1,10 @@
-import { Button } from "@/components/ui/button";
+import { FunctionComponent } from "react";
+import { Layout } from "./layout/default.component";
 
-const App = () => {
+export const App: FunctionComponent = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
-      <Button>Click me</Button>
-    </div>
+    <Layout>
+      <h1>Hello World</h1>
+    </Layout>
   );
 };
-
-export default App;
