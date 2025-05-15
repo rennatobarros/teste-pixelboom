@@ -6,7 +6,6 @@ import { DropdownMenuContent } from "@/components/ui/dropdown-menu";
 import {
   Sidebar,
   SidebarContent,
-  // SidebarFooter,
   SidebarGroup,
   SidebarGroupLabel,
   SidebarHeader,
@@ -17,23 +16,25 @@ import {
   SidebarFooter,
 } from "@/components/ui/sidebar";
 import { Activity, FileCheck, Headset, Settings, User } from "lucide-react";
-// import { Settings } from "lucide-react";
 
 const items = [
   {
     title: "Dashboard",
     url: "#",
     icon: Activity,
+    isActive: false,
   },
   {
     title: "Usuários",
     url: "#",
     icon: User,
+    isActive: true,
   },
   {
     title: "Documentos",
     url: "#",
     icon: FileCheck,
+    isActive: false,
   },
 ];
 
@@ -72,12 +73,13 @@ export const AppSidebar = () => {
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton
+                    isActive={item.isActive}
                     asChild
-                    className="h-10 hover:bg-primary group/item rounded-4xl p-3 transition-all duration-300"
+                    className="h-10 hover:bg-primary group/item rounded-4xl p-3 transition-all duration-300 data-[active=true]:bg-primary"
                   >
                     <a href={item.url}>
-                      <item.icon className="h-4 w-4 text-zinc-500 group-hover/item:text-white" />
-                      <span className="text-zinc-500 group-hover/item:text-white text-sm font-medium">
+                      <item.icon className={`h-4 w-4 ${item.isActive ? 'text-white' : 'text-zinc-500'} group-hover/item:text-white`} />
+                      <span className={`text-sm font-medium ${item.isActive ? 'text-white' : 'text-zinc-500'} group-hover/item:text-white`}>
                         {item.title}
                       </span>
                     </a>
@@ -94,11 +96,11 @@ export const AppSidebar = () => {
               <SidebarMenuItem>
                 <SidebarMenuButton
                   asChild
-                  className="h-10 hover:bg-primary group/item rounded-4xl p-3 transition-all duration-300"
+                  className="h-10 hover:bg-primary group/item rounded-4xl p-3 transition-all duration-300 data-[active=true]:bg-primary"
                 >
                   <a href="#">
-                    <Settings className="h-4 w-4 text-zinc-500 group-hover/item:text-white" />
-                    <span className="text-zinc-500 group-hover/item:text-white text-sm font-medium">
+                    <Settings className="h-4 w-4 text-zinc-500 group-hover/item:text-white data-[active=true]:text-white" />
+                    <span className="text-zinc-500 group-hover/item:text-white text-sm font-medium data-[active=true]:text-white">
                       Configurações
                     </span>
                   </a>

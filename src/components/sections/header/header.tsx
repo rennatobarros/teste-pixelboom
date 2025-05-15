@@ -14,7 +14,7 @@ export const Header: FunctionComponent = () => {
   const { toggleSidebar } = useSidebar();
 
   return (
-    <header className="w-full h-fit flex items-center justify-between p-4 border-b">
+    <header className="sticky top-0 w-full h-fit flex items-center justify-between p-4 border-b bg-white">
       <Button variant="ghost" size="icon" onClick={toggleSidebar}>
         <PanelLeftClose />
       </Button>

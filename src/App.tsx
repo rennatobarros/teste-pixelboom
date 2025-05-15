@@ -1,10 +1,11 @@
 import { FunctionComponent } from "react";
 import { Layout } from "./layout/default.component";
+import { Users } from "./components/pages/users/users";
 
 export const App: FunctionComponent = () => {
   return (
     <Layout>
-      <h1>Hello World</h1>
+      <Users />
     </Layout>
   );
 };
