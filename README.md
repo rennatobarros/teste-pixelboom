@@ -1,120 +1,88 @@
-# User Management Interface
+# 👥 User Management Interface
 
-This project is a technical test implementation for a Frontend Developer position at Pixel Boom Studios. It's a modern, responsive user management interface built with React, TypeScript, and Vite, featuring a beautiful UI powered by shadcn/ui components and styled with Tailwind CSS.
+Este projeto é uma implementação de teste técnico para a vaga de Desenvolvedor Frontend na Pixel Boom Studios. Consiste em uma interface moderna e responsiva para gerenciamento de usuários, construída com React e estilizada com Tailwind CSS.
 
-🎨 [View Figma Design](https://www.figma.com/design/TOALrzlKsyYKDhWIIvysNI/Teste-Frontend-Developer?node-id=0-1&p=f&t=e2xHEgEuILnbmnkU-0)
+---
 
-🚀 [View Live Demo](https://teste-pixelboom.vercel.app/)
+## 🔗 Links Importantes
 
-## Implementation Checklist
+- 🎨 [Ver Design no Figma](https://www.figma.com/design/TOALrzlKsyYKDhWIIvysNI/Teste-Frontend-Developer?node-id=0-1&p=f&t=e2xHEgEuILnbmnkU-0)
+- 🚀 [Ver Demo em Produção](https://teste-pixelboom.vercel.app/)
 
-### Required Features ✅
+---
 
-- [x] **Listing Screen**
-  - [x] Display a list of user records
-  - [x] Add button for new entries
-  - [x] Responsive grid layout
+## ✅ Funcionalidades Implementadas
 
-- [x] **User Management**
-  - [x] Add new user functionality
-  - [x] Edit existing user details
-  - [x] Modal/Drawer implementation using shadcn/ui
+### 📱 Tela de Listagem
+- Exibição de lista de registros em cards
+- Botão de adição de novo usuário
 
-- [x] **UI/UX Requirements**
-  - [x] Shadcn/ui components integration
-  - [x] Responsive design (mobile/desktop)
-  - [x] Toast notifications
+### 👤 Gerenciamento de Usuários
+- Adição de novos usuários
+- Edição de usuários existentes
 
-## Features
+---
 
-- 📱 **Responsive Design**: Fully responsive interface that works seamlessly on desktop and mobile devices
-- 👤 **User Management**:
-  - Add new users with detailed information
-  - Edit existing user details
-  - View user activity statistics
-- 🎨 **Modern UI Components**:
-  - Beautiful drawer/bottom sheet for forms
-  - Interactive data tables
-  - Responsive cards and grids
-  - Toast notifications for actions
-- 📊 **Dashboard Overview**:
-  - Total users count
-  - Active/Inactive users statistics
-  - Session time tracking
-  - User activity monitoring
+## 🚀 Tecnologias Utilizadas
 
-## Tech Stack
+- **[React](https://reactjs.org/)** — Biblioteca frontend
+- **[TypeScript](https://www.typescriptlang.org/)** — Tipagem estática
+- **[Vite](https://vitejs.dev/)** — Build tool
+- **[Tailwind CSS](https://tailwindcss.com/)** — Framework CSS
+- **[shadcn/ui](https://ui.shadcn.com/)** — Componentes React
+- **[Lucide React](https://lucide.dev/)** — Ícones
 
-- ⚛️ **React** - Frontend library
-- 📘 **TypeScript** - Type safety and better developer experience
-- ⚡ **Vite** - Next generation frontend tooling
-- 🎨 **Tailwind CSS** - Utility-first CSS framework
-- 🔷 **shadcn/ui** - High-quality React components
-- 📦 **Other key libraries**:
-  - Lucide React - Beautiful icons
-  - React Hook Form - Form handling
-  - Sonner - Toast notifications
-  - Vaul - Drawer components
+---
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v18 or higher)
-- npm or yarn or pnpm
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   # or
-   pnpm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
-   ```
-
-4. Open [http://localhost:5173](http://localhost:5173) in your browser to see the application.
-
-## Project Structure
+## 📁 Estrutura do Projeto
 
 ```
 src/
 ├── components/
-│   ├── compositions/    # Complex components
-│   ├── elements/        # Basic reusable components
-│   ├── sections/        # Page sections
-│   └── ui/             # shadcn/ui components
-├── hooks/              # Custom React hooks
-├── lib/               # Utility functions
-└── pages/             # Page components
+│   ├── compositions/    # Componentes complexos
+│   ├── elements/        # Componentes básicos
+│   ├── sections/        # Seções de página
+│   └── ui/             # Componentes shadcn/ui
+├── hooks/              # Hooks React
+├── lib/               # Funções utilitárias
+└── pages/             # Componentes de página
 ```
 
-## Contributing
+---
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## 🧪 Como rodar localmente
 
-## License
+1. **Clone o repositório**
+```bash
+git clone https://github.com/rennatobarros/teste-pixelboom
+```
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+2. **Instale as dependências**
+```bash
+pnpm install
+```
 
-## Acknowledgments
+3. **Inicie o servidor de desenvolvimento**
+```bash
+pnpm dev
+```
 
-- [shadcn/ui](https://ui.shadcn.com/) for the beautiful component library
-- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
-- [Vite](https://vitejs.dev/) for the blazing fast development experience
+4. **Acesse no navegador**
+```
+http://localhost:5173
+```
+
+---
+
+## 📦 Scripts Disponíveis
+
+- `npm run dev` — Inicia o servidor de desenvolvimento
+- `npm run build` — Compila o projeto para produção
+- `npm run preview` — Visualiza a build de produção localmente
+- `npm run lint` — Executa o linter
+
+---
+
+## 🧑‍💻 Autor
+
+Desenvolvido como teste técnico para Pixel Boom Studios 🚀
