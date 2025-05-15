@@ -4,6 +4,8 @@ This project is a technical test implementation for a Frontend Developer positio
 
 🎨 [View Figma Design](https://www.figma.com/design/TOALrzlKsyYKDhWIIvysNI/Teste-Frontend-Developer?node-id=0-1&p=f&t=e2xHEgEuILnbmnkU-0)
 
+🚀 [View Live Demo](https://teste-pixelboom.vercel.app/)
+
 ## Implementation Checklist
 
 ### Required Features ✅
